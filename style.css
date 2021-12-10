@@ -1,0 +1,294 @@
+* {
+    padding:0px;
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    transition: .2s;
+}
+      
+#contents {
+  position: relative;
+}
+
+.dark-mode {
+  background-color: #181A1B;
+  color: white;
+  transition: .2;
+}
+
+#darkmodetext {
+  position: absolute;
+  margin: 56px 0px 0px 549px; 
+  font-size: 13px;
+  color: white;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 629px) { 
+  .topnav a:not(.active) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  #darkmodetext {
+    margin:56px 0px 0px 255px;
+  }
+
+  .topnav {
+    padding-left: 15px;
+  }
+
+  #logo {
+      margin-left: 50px !important;
+  }
+}
+
+@media screen and (max-width: 392px) { 
+  .topnav {
+    padding-left: 0px;
+  } 
+  
+  .topnav a {
+    margin-left:  0px !important;
+  }
+
+  .switch {
+    margin-left: 15px !important;
+  }
+
+  .darkmodetext {
+    margin-left: 215px !important;
+  }
+}
+
+@media screen and (max-width: 377px) { 
+  .topnav a {
+    margin-left:  0px !important;
+  }
+
+  .switch {
+    margin-left: 15px !important;
+  }
+
+  .darkmodetext {
+    margin-left: 215px !important;
+  }
+}
+
+#header {
+  background-color: #2b2b2b;
+  height: 75px;
+  overflow: hidden;
+  position: relative;
+}
+
+#links {
+  float:left;
+  margin-left: 50px;
+  transform: translateY(30%);  
+}       
+
+#logo {
+  width:75px;
+  height: 100%;
+  background-color: green;
+  margin-left: 75px;
+  float:left;
+    
+}
+
+.topnav {
+  overflow: hidden;
+  margin:15px;
+  position: relative;
+}
+  
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+  
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+.topnav .icon {
+  display: none;
+}
+
+.mobile-menu-child {
+  position:absolute;
+  right: 0;
+  margin:0px auto !important;
+  background-color: #2b2b2bf6;
+  width:246px; 
+  border: 2px solid rgb(0, 68, 255);
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.mobile-menu-child a {
+  text-align: center;
+  display:block;
+  color:white;
+  text-decoration: none; 
+  padding: 12px 0px;
+}
+  
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+  transform: translateY(15%);
+  margin-left: 23px;
+  float: left;
+  overflow: hidden;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray; 
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(15, 15, 15);
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  background-color: rgb(204, 204, 204);
+}
+
+input:checked + .slider {
+  background-color: rgb(15, 15, 15);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(204, 204, 204);;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#icon {
+  margin: 12px;
+}
+
+.searchbar {
+  margin-left: 21px;
+  background-color: #808080;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  float:left;
+}
+
+.searchbar input {
+  padding-right: 0px;
+}
+
+.searchbar .fa {
+  margin-left: 5px;
+}
+
+#searchbar2 {
+  position: absolute;
+  right: 0;
+  margin: 10px 10px;
+  background-color: #2b2b2b;
+  height:50px;
+  border: 2px solid rgb(0, 68, 255);
+  border-radius: 5px;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7; 
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+#closebutton {
+  padding-left: 10px;
+  transition: .2s;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  right: 0;
+  margin:13px 10px 0px 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: .2s;
+  position: absolute;
+}
+
+.dot:active {
+  background-color: gray;
+  transition: .2s;
+}
+
+#submit {
+  transition: .2s;
+  padding-right: 12px;
+}
