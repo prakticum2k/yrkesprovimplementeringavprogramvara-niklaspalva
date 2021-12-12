@@ -15,6 +15,10 @@ body {
   position: relative;
 }
 
+.light {
+  color:black !important;
+}
+
 .dark-mode {
   background-color: #181A1B !important;
   color: white;
@@ -36,17 +40,23 @@ body {
 .light-mode #searchbar2 {
   background-color: rgb(204, 204, 204) !important
 }
+@media screen and (max-width: 958px) {
+  #darkmodetext2 {
+    display:flex !important;
+  }
 
-#darkmodetext {
-  position: absolute;
-  right:0;
-  margin: 55px 10px 0px 0px;
-  font-size: 13px;
-  color: white;
-  font-weight: 700;
-  overflow: hidden;
+  #darkmodetext {
+    display:none;
+  }
+
+  #switch1 {
+    display:none;
+  }
+
+  #switch2 {
+    display:flex !important;
+  }
 }
-
 @media screen and (max-width: 629px) { 
   .topnav a:not(.active) {display: none;}
   .topnav a.icon {
@@ -65,12 +75,21 @@ body {
   #footer {
     height: 225px !important;
   }
+
   .img {
   height: 41px !important;
   margin-top: 25px !important;
+  }
 
+  #darkmodetext2 {
+  bottom: 230px !important;
+  }
+
+  #switch2 {
+    bottom: 265px !important;
   }
 }
+
 
 @media screen and (max-width: 392px) { 
   .topnav {
@@ -78,7 +97,7 @@ body {
   } 
   
   .topnav a {
-    margin-left:  0px !important;
+    margin-left:  10px !important;
   }
 
   .switch {
@@ -88,7 +107,7 @@ body {
 
 @media screen and (max-width: 377px) { 
   .topnav a {
-    margin-left:  0px !important;
+    margin-left:  10px !important;
   }
 
   .switch {
@@ -179,6 +198,20 @@ body {
 .mobile-menu-child .active {
   background-color: #0044ffad;
 }
+
+.darkmodetext {
+  position: absolute;
+  right:0px;
+  font-size: 14px;
+  color: white;
+  font-weight: 750;
+  overflow: hidden;
+  margin-top: 52px;
+}
+
+#switchbox {
+  margin-left: 50px;
+}
   
 .switch {
   position: relative;
@@ -186,6 +219,7 @@ body {
   height: 34px;
   transform: translateY(50%);
   margin-left: 23px;
+  margin-right:5px;
   float: right;
   overflow: hidden;
 }
@@ -364,4 +398,17 @@ button {
   height: 61px;
   margin-top: 50px;
   overflow:hidden;
+}
+
+#darkmodetext2 {
+  bottom: 95px;
+  position: fixed;
+  display:none;
+}
+
+#switch2 {
+  right:0;
+  bottom: 130px;
+  position: fixed;
+  display:none;
 }

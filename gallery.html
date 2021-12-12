@@ -6,19 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
+  <script src="js/script.js"></script>
   <script src="https://kit.fontawesome.com/c9ade3300c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-<body id="body" class="dark-mode" onresize="resizeFn();">
+<body id="body" class="dark-mode" onresize="resizeFn();" onload="resizeFn(); getstorage();">
 
   <!--HEADER-->
   <div id="header">
     <div id="logo"></div>
 
-    <p id="darkmodetext" class="darkmodetext dark">Dark Mode</p>
+    
     <!--NAVIGATION-->
     <div class="topnav" id="myTopnav">
       <a href="home.html">Home</a>
@@ -26,10 +26,13 @@
       <a href="project.html">Project</a>
       <a href="#about">About</a>
       <!--DARK MODE-->
-      <label class="switch">
-        <input type="checkbox" id="toggleswitch" checked onclick="darkMode(); closeSearch();">
+      <div id="switchbox">
+      <label class="switch" id="switch1">
+        <input type="checkbox" id="toggleswitch" class="toggleswitch" onclick="darkMode(); closeSearch(); reverse();">
         <span class="slider round"></span>
-      </label>
+        </label>
+        <p id="darkmodetext" class="darkmodetext dark">Dark Mode</p>
+      </div>
       <!--/DARK MODE-->
 
       <!--SEARCH BAR-->
@@ -61,7 +64,11 @@
 
   <!--CONTENTS-->
   <div id="contents">
-
+      <label class="switch" id="switch2">
+        <input type="checkbox" id="toggleswitch" class="toggleswitch" onclick="darkMode(); closeSearch(); reverse();">
+        <span class="slider round"></span>
+      </label>
+      <p class="darkmodetext" id="darkmodetext2">Dark Mode</p>
     <form action="" id="searchbar2" class="searchbar" style="display: flex;">
       <a id="closebutton" onclick="closeSearch()"><i class="far fa-times-circle"></i></a>
       <input type="search" id="query" placeholder="Search...">
@@ -82,7 +89,7 @@
     </div>
 
   </footer>
-  <script src="js/script.js"></script>
+
   <link rel="stylesheet" href="style.css">
 </body>
 <div onload="resizeFn();"></div>
