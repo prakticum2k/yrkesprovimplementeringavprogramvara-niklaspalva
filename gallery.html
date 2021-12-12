@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="js/script.js"></script>
-    <script src="https://kit.fontawesome.com/c9ade3300c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
-<body id="body" class="dark-mode">
 
-<!--HEADER-->
-<div id="header">
-  <div id="logo"></div>
-  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://kit.fontawesome.com/c9ade3300c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="body" class="dark-mode" onresize="resizeFn();">
+
+  <!--HEADER-->
+  <div id="header">
+    <div id="logo"></div>
+
     <p id="darkmodetext" class="darkmodetext dark">Dark Mode</p>
     <!--NAVIGATION-->
     <div class="topnav" id="myTopnav">
@@ -25,50 +27,62 @@
       <a href="#about">About</a>
       <!--DARK MODE-->
       <label class="switch">
-        <input type="checkbox" checked onclick="darkMode(); closeSearch();">
+        <input type="checkbox" id="toggleswitch" checked onclick="darkMode(); closeSearch();">
         <span class="slider round"></span>
       </label>
       <!--/DARK MODE-->
 
       <!--SEARCH BAR-->
       <form action="/action_page.php" id="searchbar" class="searchbar" style="display: none;">
-      <input type="search" id="query" placeholder="Search...">
-      <button type="submit"><i class="fa fa-search"></i></button>
+        <input type="search" id="query" placeholder="Search...">
+        <button type="submit"><i class="fa fa-search" style="color: white;"></i></button>
       </form>
       <!--/SEARCH BAR-->
-      
+
       <!--HIDE NAVIGATION-->
       <a href="javascript:void(0);" class="icon" onclick="BIGHIDETHING(); closeSearch()">
         <i class="fa fa-bars"></i>
       </a>
       <!--/HIDE NAVIGATION-->
     </div>
-    
+
   </div>
-<!--END OF HEADER-->
+  <!--END OF HEADER-->
 
-<div class="mobile-menu" id="HAMBURGERR" style="display:none;">
-  <div class="mobile-menu-child">
-    <a href="home.html">Home</a>
-    <a href="gallery.html" class="active">Gallery</a>
-    <a href="project.html">Project</a>
-    <a href="#about">About</a>
+  <div class="mobile-menu" id="HAMBURGERR" style="display:none;">
+    <div class="mobile-menu-child">
+      <a href="home.html">Home</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="project.html">Project</a>
+      <a href="#about">About</a>
+    </div>
   </div>
-</div>
 
 
-<!--CONTENTS-->
-<div id="contents" >
+  <!--CONTENTS-->
+  <div id="contents">
 
-        <form action="" id="searchbar2" class="searchbar" style="display: none;">
-          <a id="closebutton" type="" onclick="closeSearch()"><i class="far fa-times-circle"></i></a>
-          <input type="search" id="query" placeholder="Search...">
-          <button type="submit" id="submit"><i class="fa fa-search"></i></button>
-        </form>
+    <form action="" id="searchbar2" class="searchbar" style="display: flex;">
+      <a id="closebutton" onclick="closeSearch()"><i class="far fa-times-circle"></i></a>
+      <input type="search" id="query" placeholder="Search...">
+      <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+    </form>
 
-<span class="dot" id="searchicon" onclick="openSearch()"><i class="fas fa-search" id="icon"></i></span>
-<p style="word-wrap: break-word;">suadsadsdadsadasdasdsdadsadasdsdadsadasdasdsap</p>
-<a onclick="getstorage()">yes</a>
+    <span class="dot" id="searchicon" style="display: none;" onclick="openSearch()"><i class="fas fa-search"
+        id="icon"></i></span>
+    <p style="word-wrap: break-word;" id="lol">suadsadsdadsadasdasdsdadsadasdsdadsadasdasdsap</p>
+    <a onclick="getstorage()">yes</a>
+  </div>
+  <footer id="footer">
 
+    <div class="horizontal-flex-container" id="footerlink">
+      <img class="img" id="img1" src="img/GitHub_Logo_White.png" />
+      <img class="img" id="img2" src="img/LI-Logo.png" />
+      <img class="img" id="img3" src="img/2021 Twitter logo - white.png" />
+    </div>
 
-<link rel="stylesheet" href="style.css"></body>
+  </footer>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</body>
+<div onload="resizeFn();"></div>
