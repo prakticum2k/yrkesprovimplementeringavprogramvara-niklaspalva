@@ -54,8 +54,6 @@ function resizeFn() {
     searchbar2.style.display = "nobe";
   }
 }
-
-
   
 
 function darkMode() {
@@ -170,3 +168,4 @@ function BIGHIDETHING() {
 
 window.onload = resizeFn;
 window.onload = getstorage;
+

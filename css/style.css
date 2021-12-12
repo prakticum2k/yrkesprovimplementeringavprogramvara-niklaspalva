@@ -40,6 +40,11 @@ body {
 .light-mode #searchbar2 {
   background-color: rgb(204, 204, 204) !important
 }
+
+@media screen and (max-width: 1550px) {
+
+}
+
 @media screen and (max-width: 958px) {
   #darkmodetext2 {
     display:flex !important;

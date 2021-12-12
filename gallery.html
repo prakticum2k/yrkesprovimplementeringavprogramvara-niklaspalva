@@ -5,11 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="js/script.js"></script>
-  <script src="https://kit.fontawesome.com/c9ade3300c.js" crossorigin="anonymous"></script>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="css/slideshow.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="js/script.js"></script>
+  
+  <script src="https://kit.fontawesome.com/c9ade3300c.js" crossorigin="anonymous"></script>
+  
 </head>
 
 <body id="body" class="dark-mode" onresize="resizeFn();" onload="resizeFn(); getstorage();">
@@ -77,9 +80,33 @@
 
     <span class="dot" id="searchicon" style="display: none;" onclick="openSearch()"><i class="fas fa-search"
         id="icon"></i></span>
-    <p style="word-wrap: break-word;" id="lol">suadsadsdadsadasdasdsdadsadasdsdadsadasdasdsap</p>
-    <a onclick="getstorage()">yes</a>
+    <p style="word-wrap: break-word;" id="lol"></p>
+
+
   </div>
+
+<div class="carousel">
+  <div class="carousel-inner">
+    <div style="background-color: orange;" class="carousel-item">
+      <h1>First slide</h1>
+    </div>
+    <div style="background-color: greenyellow;" class="carousel-item">
+      <h1>Second slide</h1>
+    </div>
+    <div style="background-color: rgb(37, 150, 255);" class="carousel-item">
+      <h1>Third slide</h1>
+    </div>
+    <div style="background-image:url(img/img_mountains_wide.jpg) ;" class="carousel-item">
+      <img src="" class="image">
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <span class="prev"></span>
+    <span class="next"></span>
+  </div>
+  <div class="carousel-indicators"></div>
+</div>
+
   <footer id="footer">
 
     <div class="horizontal-flex-container" id="footerlink">
@@ -90,6 +117,6 @@
 
   </footer>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/slideshow.js"></script>
 </body>
-<div onload="resizeFn();"></div>
