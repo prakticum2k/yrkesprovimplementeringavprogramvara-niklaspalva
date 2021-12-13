@@ -13,6 +13,13 @@ body {
       
 #contents {
   position: relative;
+  background-color: #8d4747;
+  height: 45vw;
+  width: 75vw;
+  margin-top: 3vw !important;
+  margin-bottom: 3vw !important;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .light {
@@ -86,13 +93,13 @@ body {
   margin-top: 25px !important;
   }
 
-  #darkmodetext2 {
+  /* #darkmodetext2 {
   bottom: 230px !important;
-  }
+  } */
 
-  #switch2 {
+  /* #switch2 {
     bottom: 265px !important;
-  }
+  } */
 }
 
 
@@ -106,7 +113,7 @@ body {
   }
 
   .switch {
-    margin-left: 15px !important;
+    /* margin-left: 15px !important; */
   }
 }
 
@@ -116,7 +123,7 @@ body {
   }
 
   .switch {
-    margin-left: 15px !important;
+    /* margin-left: 15px !important; */
   }
 }
 
@@ -205,13 +212,10 @@ body {
 }
 
 .darkmodetext {
-  position: absolute;
-  right:0px;
   font-size: 14px;
   color: white;
   font-weight: 750;
   overflow: hidden;
-  margin-top: 52px;
 }
 
 #switchbox {
@@ -227,6 +231,15 @@ body {
   margin-right:5px;
   float: right;
   overflow: hidden;
+}
+
+#switch2 {
+  margin:0px !important; 
+  right:0;
+  bottom: 0;
+  position: relative;
+  display:none;
+  float:none;
 }
 
 .switch input { 
@@ -369,7 +382,7 @@ button {
   width: calc(100% - 0px);
   height: 90px;
   bottom: 0;
-  position: absolute;
+  position: relative;
   background-color: #2b2b2b;
 }
 
@@ -405,15 +418,15 @@ button {
   overflow:hidden;
 }
 
-#darkmodetext2 {
-  bottom: 95px;
-  position: fixed;
-  display:none;
+#darkmodetext {
+  position: absolute;
+  right:0px;
+  margin-top: 52px;
 }
 
-#switch2 {
-  right:0;
-  bottom: 130px;
-  position: fixed;
+#darkmodetext2 {
+  bottom: 0;
+  right: 0;
+  position: relative;
   display:none;
 }

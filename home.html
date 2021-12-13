@@ -64,14 +64,6 @@
 
   <!--CONTENTS-->
 
-  <div id="contents">
-
-    <label class="switch" id="switch2">
-      <input type="checkbox" id="toggleswitch" class="toggleswitch" onclick="darkMode(); closeSearch(); reverse();">
-      <span class="slider round"></span>
-    </label>
-
-    <p class="darkmodetext" id="darkmodetext2">Dark Mode</p>
 
     <form action="" id="searchbar2" class="searchbar" style="display: flex;">
       <a id="closebutton" onclick="closeSearch()"><i class="far fa-times-circle"></i></a>
@@ -79,12 +71,21 @@
       <button type="submit" id="submit"><i class="fa fa-search"></i></button>
     </form>
 
-    <span class="dot" id="searchicon" style="display: none;" onclick="openSearch()"><i class="fas fa-search"
-        id="icon"></i></span>
+    <span class="dot" id="searchicon" style="display: none;" onclick="openSearch()"><i class="fas fa-search" id="icon"></i></span>
+  <div id="contents">
+
+
 
 
   </div>
 
+    <label class="switch" id="switch2">
+      <input type="checkbox" id="toggleswitch" class="toggleswitch" onclick="darkMode(); closeSearch(); reverse();">
+      <span class="slider round"></span>
+    </label>
+    
+    <p class="darkmodetext" id="darkmodetext2">Dark Mode</p>
+    
   <footer id="footer">
   
     <div class="horizontal-flex-container" id="footerlink">
