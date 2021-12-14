@@ -11,8 +11,7 @@ body {
     transition: .2s;
 }
       
-#contents {
-  position: relative;
+.contents {
   background-color: #8d4747;
   height: 45vw;
   width: 75vw;
@@ -20,6 +19,8 @@ body {
   margin-bottom: 3vw !important;
   margin: auto;
   border-radius: 10px;
+  z-index: -1;
+  padding: 30px;
 }
 
 .light {

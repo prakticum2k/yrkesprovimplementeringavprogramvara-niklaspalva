@@ -1,16 +1,15 @@
 
 
 .carousel{
-    height: 400px;
-    width: 100vw;
-    margin-top: 100px !important;
-    max-width: 678px;
+    height: 40vw;
+    width: 63vw;
     overflow-x: hidden;
     margin:auto;
     position: relative;
     display: flex;
     justify-content: flex-start;
     border-radius: 5px;
+    
 }
 
 h1{
