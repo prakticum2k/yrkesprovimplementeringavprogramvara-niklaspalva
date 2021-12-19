@@ -1,17 +1,23 @@
 
 
 .carousel{
+<<<<<<< HEAD
     height: 400px;
     width: 100vw;
     margin-bottom: 200px !important;
     margin-top: 100px !important;
     max-width: 678px;
+=======
+    height: 40vw;
+    width: 63vw;
+>>>>>>> refs/remotes/origin/main
     overflow-x: hidden;
     margin:auto;
     position: relative;
     display: flex;
     justify-content: flex-start;
     border-radius: 5px;
+    
 }
 
 h1{
