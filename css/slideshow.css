@@ -3,6 +3,7 @@
 .carousel{
     height: 400px;
     width: 100vw;
+    margin-bottom: 200px !important;
     margin-top: 100px !important;
     max-width: 678px;
     overflow-x: hidden;

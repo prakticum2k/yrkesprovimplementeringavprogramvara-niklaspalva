@@ -221,6 +221,15 @@ body {
 #switchbox {
   margin-left: 50px;
 }
+
+#switch2 {
+  margin:0px !important; 
+  right:0;
+  bottom: 0;
+  position: relative;
+  display:none;
+  float:none;
+}
   
 .switch {
   position: relative;
@@ -231,15 +240,6 @@ body {
   margin-right:5px;
   float: right;
   overflow: hidden;
-}
-
-#switch2 {
-  margin:0px !important; 
-  right:0;
-  bottom: 0;
-  position: relative;
-  display:none;
-  float:none;
 }
 
 .switch input { 
