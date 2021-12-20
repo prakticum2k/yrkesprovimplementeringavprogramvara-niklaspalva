@@ -8,7 +8,7 @@ function myFunction() {
 }
 
 function reverse() {
-  var x = document.getElementById("darkmodetext2");
+  var x = document.getElementById("switchtext2");
   if (x.className === "darkmodetext dark") {
     x.className = "darkmodetext light";
   } else {
@@ -16,13 +16,12 @@ function reverse() {
   }
 }
 
-var widths = [0, 629, 958];
+var widths = [0, 629, 800];
 var searchbar2 = document.getElementById("searchbar2")
-  
-  window.onload = window.localStorage.getItem('dark-mode');
-  window.onresize = resizeFn;
-  window.onresize = searchbar2.style.display = "none"; 
-  resizeFn();
+window.onload = window.localStorage.getItem('dark-mode');
+window.onresize = resizeFn;
+window.onresize = searchbar2.style.display = "none"; 
+resizeFn();
 
 function onresize () {
 searchbar2.style.display = "none"; 
@@ -59,11 +58,13 @@ function resizeFn() {
 function darkMode() {
 
   var body = document.getElementById("body");
+  var header = document.getElementById("header")
+  var footer = document.getElementById("footer")
   var searchbar2 = document.getElementById("searchbar2");
   var searchicon = document.getElementById("searchicon");
   var toggleswitch = document.getElementById("toggleswitch");
   var darkmodetxt = document.getElementsByClassName("darkmodetext")
-  var x = document.getElementsByClassName("toggleswitch");  
+  var toggleswitch = document.getElementsByClassName("toggleswitch");  
   var i;
 
   if (body.className === "light-mode") {
@@ -71,41 +72,48 @@ function darkMode() {
     toggleswitch.checked = "checked";
     window.localStorage.setItem('dark-mode', 'dark-mode');
     body.className = "dark-mode";
+    footer.className = "dark-mode"
+    header.className = "dark-mode"
     searchicon.className = "dot dark-mode"
     searchbar2.className = "searchbar dark-mode"
-    document.getElementById("darkmodetext").innerHTML = "Dark Mode";
+    document.getElementById("switchtext").innerHTML = "Dark Mode";
     console.log("toggle dark")
 
-    for (i = 0; i < x.length; i++) {
-    x[i].checked = "checked";
+    for (i = 0; i < toggleswitch.length; i++) {
+    toggleswitch[i].checked = "checked";
     darkmodetxt[i].innerHTML = "Dark Mode";
     }
 
     } else {
     
-    for (i = 0; i < x.length; i++) {
-    x[i].checked = "";
+    for (i = 0; i < toggleswitch.length; i++) {
+    toggleswitch[i].checked = "";
     darkmodetxt[i].innerHTML = "Light Mode";
     }
     toggleswitch.checked = "";
     window.localStorage.setItem('dark-mode', 'light-mode');
+    header.className = "light-mode"
+    footer.className = "light-mode"
     body.className = "light-mode";
     searchicon.className = "dot light-mode"
     searchbar2.className = "searchbar light-mode"
-    document.getElementById("darkmodetext").innerHTML = "Light Mode";
+    document.getElementById("switchtext").innerHTML = "Light Mode";
     console.log("toggle light")
   }
 }
 
 function getstorage() {
+  var contents = document.getElementById("contents")
+  var header = document.getElementById("header")
+  var footer = document.getElementById("footer")
   var body = document.getElementById("body");
   var searchbar2 = document.getElementById("searchbar2");
   var toggleswitch = document.getElementById("toggleswitch");
   var searchicon = document.getElementById("searchicon");
   var darkmode = window.localStorage.getItem('dark-mode')
   var darkmodetxt = document.getElementsByClassName("darkmodetext")
-  var darkmodetext2 = document.getElementById("darkmodetext2");
-  var x = document.getElementsByClassName("toggleswitch");
+  var darkmodetext2 = document.getElementById("switchtext2");
+  var toggleswitch = document.getElementsByClassName("toggleswitch");
   var i;
 
   window.localStorage.getItem('dark-mode');
@@ -115,25 +123,32 @@ function getstorage() {
   if (darkmode === ('dark-mode')) {
     darkmodetext2.className = "darkmodetext dark";
     toggleswitch.checked = "checked";
-    for (i = 0; i < x.length; i++) {
-    x[i].checked = "checked";
+
+    for (i = 0; i < toggleswitch.length; i++) {
+    toggleswitch[i].checked = "checked";
     darkmodetxt[i].innerHTML = "Dark Mode";
     }
     console.log('test dark')
     body.className = "dark-mode";
     searchicon.className = "dot dark-mode";
     searchbar2.className = "searchbar dark-mode"
+    contents.className = "dark-mode"
+    header.className = "dark-mode"
+    footer.className = "dark-mode"
     darkmodetxt.innerHTML = "Dark Mode";
   } else {
     darkmodetext2.className = "darkmodetext light";
     toggleswitch.checked = "";
-    for (i = 0; i < x.length; i++) {
-    x[i].checked = "";
+    for (i = 0; i < toggleswitch.length; i++) {
+    toggleswitch[i].checked = "";
     darkmodetxt[i].innerHTML = "Light Mode";
     }
     console.log('test light')
     body.className = "light-mode";
     searchicon.className = "dot light-mode";
+    contents.className = "light-mode"
+    header.className = "light-mode"
+    footer.className = "light-mode"
     searchbar2.className = "searchbar light-mode"
     darkmodetxt.innerHTML = "Light Mode";
   }

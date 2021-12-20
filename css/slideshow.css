@@ -1,16 +1,8 @@
 
 
 .carousel{
-<<<<<<< HEAD
-    height: 400px;
-    width: 100vw;
-    margin-bottom: 200px !important;
-    margin-top: 100px !important;
-    max-width: 678px;
-=======
     height: 40vw;
     width: 63vw;
->>>>>>> refs/remotes/origin/main
     overflow-x: hidden;
     margin:auto;
     position: relative;
@@ -108,6 +100,6 @@ h1{
 
 @media screen and (max-width: 629px) {
   .carousel {
-    margin-top: 75px !important;
+    
   }
 }

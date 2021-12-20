@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/slideshow.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" href="img/logo2.svg">
   <script src="js/script.js"></script>
   
   <script src="https://kit.fontawesome.com/c9ade3300c.js" crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
 
   <!--HEADER-->
   <div id="header">
-    <div id="logo"></div>
+    <div id="logo"><img src="img/logo2.svg"></div>
 
     
     <!--NAVIGATION-->
@@ -27,14 +28,13 @@
       <a href="home.html">Home</a>
       <a href="gallery.html" class="active">Gallery</a>
       <a href="project.html">Project</a>
-      <a href="#about">About</a>
       <!--DARK MODE-->
       <div id="switchbox">
       <label class="switch" id="switch1">
         <input type="checkbox" id="toggleswitch" class="toggleswitch" onclick="darkMode(); closeSearch(); reverse();">
         <span class="slider round"></span>
         </label>
-        <p id="darkmodetext" class="darkmodetext dark">Dark Mode</p>
+        <p id="switchtext" class="darkmodetext dark">Dark Mode</p>
       </div>
       <!--/DARK MODE-->
 
@@ -67,16 +67,13 @@
 
   <!--CONTENTS-->
   
-<<<<<<< HEAD
+
       <label class="switch" id="switch2">
         <input type="checkbox" id="toggleswitch" class="toggleswitch" onclick="darkMode(); closeSearch(); reverse();">
         <span class="slider round"></span>
       </label>
-      <p class="darkmodetext" id="darkmodetext2">Dark Mode</p>
-=======
+      <p class="darkmodetext" id="switchtext2">Dark Mode</p>
 
-      
->>>>>>> refs/remotes/origin/main
     <form action="" id="searchbar2" class="searchbar" style="display: flex;">
       <a id="closebutton" onclick="closeSearch()"><i class="far fa-times-circle"></i></a>
       <input type="search" id="query" placeholder="Search...">
@@ -84,16 +81,11 @@
     </form>
 
     <span class="dot" id="searchicon" style="display: none;" onclick="openSearch()"><i class="fas fa-search"
-        id="icon"></i></span>
+        id="searchicon"></i></span>
     <p style="word-wrap: break-word;" id="lol"></p>
 
-<<<<<<< HEAD
-<!-- <div id="contents"></div> -->
+<div id="contents">  
 
-
-=======
-<div class="contents">  
->>>>>>> refs/remotes/origin/main
 <div class="carousel">
   <div class="carousel-inner">
     <div style="background-color: orange;" class="carousel-item">
@@ -117,15 +109,12 @@
 </div>
 </div>
 
-<label class="switch" id="switch2">
-  <input type="checkbox" id="toggleswitch" class="toggleswitch" onclick="darkMode(); closeSearch(); reverse();">
-  <span class="slider round"></span>
-  <p class="darkmodetext" id="darkmodetext2">Dark Mode</p>
-</label>
   <footer id="footer">
 
     <div class="horizontal-flex-container" id="footerlink">
+      <a target=”_blank” href="https://github.com/prakticum2k/yrkesprovimplementeringavprogramvara-niklaspalva">
       <img class="img" id="img1" src="img/GitHub_Logo_White.png" />
+      </a>
       <img class="img" id="img2" src="img/LI-Logo.png" />
       <img class="img" id="img3" src="img/2021 Twitter logo - white.png" />
     </div>
