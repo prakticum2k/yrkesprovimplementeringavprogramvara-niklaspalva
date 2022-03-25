@@ -18,17 +18,13 @@
 
 <body id="body" class="dark-mode" onresize="resizeFn();" onload="resizeFn(); getstorage();">
 
-  <!--HEADER-->
   <div id="header">
     <div id="logo"><img src="img/logo2.svg"></div>
 
-
-    <!--NAVIGATION-->
     <div class="topnav" id="myTopnav">
       <a href="home.html" class="active">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="project.html">Project</a>
-      <!--DARK MODE-->
       <div id="switchbox">
         <label class="switch" id="switch1">
           <input type="checkbox" id="toggleswitch" class="toggleswitch" onclick="darkMode(); closeSearch(); reverse();">
@@ -36,24 +32,18 @@
         </label>
         <p id="switchtext" class="darkmodetext dark">Dark Mode</p>
       </div>
-      <!--/DARK MODE-->
 
-      <!--SEARCH BAR-->
       <form action="/action_page.php" id="searchbar" class="searchbar" style="display: none;">
         <input type="search" id="query" placeholder="Search...">
         <button type="submit"><i class="fa fa-search" style="color: white;"></i></button>
       </form>
-      <!--/SEARCH BAR-->
 
-      <!--HIDE NAVIGATION-->
       <a href="javascript:void(0);" class="icon" onclick="BIGHIDETHING(); closeSearch()">
         <i class="fa fa-bars"></i>
       </a>
-      <!--/HIDE NAVIGATION-->
     </div>
-
   </div>
-  <!--END OF HEADER-->
+
 
   <div class="mobile-menu" id="HAMBURGERR" style="display:none;">
     <div class="mobile-menu-child">
@@ -79,20 +69,29 @@
     <button type="submit" id="submit"><i class="fa fa-search"></i></button>
   </form>
 
-  <span class="dot" id="searchicon" style="display: none;" onclick="openSearch()"><i class="fas fa-search"
-      id="searchicon"></i></span>
-  <p style="word-wrap: break-word;" id="lol"></p>
-
-<!--CONTENTS-->
-
-<a href="gallery.html"><div id="facelul">
-  <img src="img/Screenshot_1.png">
-  <div id="overlay"><i class="fas fa-address-book"></i></div>
-  <p>Tryck här för cv!</p>
-</div></a>
+  <span class="dot" id="searchicon" style="display: none;" onclick="openSearch()"><i class="fas fa-search" id="searchicon"></i></span>
+  <a href="cv.pdf" target="_blank"><span class="dot" id="cvicon" style="display: none;"><i class="fas fa-address-book" id="cvicon"></i></span></a>
 
 
-  <div id="contents" style="width: 70vw;">
+  <a href="cv.pdf" target="_blank"><div id="facelul">
+    <img src="img/Screenshot_1.png">
+    <div id="overlay"><i class="fas fa-address-book"></i></div>
+    <p>Tryck här för cv!</p>
+  </div></a>
+
+
+  <div id="contents">
+    <div id="textbox">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Eos quibusdam molestiae officia provident voluptates soluta excepturi 
+        at hic accusantium cum animi, ratione sit distinctio quo earum recusandae 
+        sint assumenda blanditiis. Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Quod qui alias eaque aperiam voluptate at 
+        accusamus temporibus voluptatum. Numquam, sunt placeat ad inventore 
+        nam quisquam! Dolores repellendus labore vel dolorem!
+      </p>
+    </div>
   </div>
 
   <footer id="footer">

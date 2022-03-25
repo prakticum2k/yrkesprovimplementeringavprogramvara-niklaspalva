@@ -31,6 +31,7 @@ function resizeFn() {
   var Hamburger = document.getElementById("HAMBURGERR");
   var searchbar2 = document.getElementById("searchbar2")
   var searchicon = document.getElementById("searchicon")
+  var searchicon = document.getElementById("searchicon")
   var searchbar = document.getElementById("searchbar");
   var footerimg = document.getElementById("footerlink")
 
@@ -62,6 +63,7 @@ function darkMode() {
   var footer = document.getElementById("footer")
   var searchbar2 = document.getElementById("searchbar2");
   var searchicon = document.getElementById("searchicon");
+  var cvicon = document.getElementById("cvicon");
   var toggleswitch = document.getElementById("toggleswitch");
   var darkmodetxt = document.getElementsByClassName("darkmodetext")
   var toggleswitch = document.getElementsByClassName("toggleswitch");  
@@ -75,6 +77,7 @@ function darkMode() {
     footer.className = "dark-mode"
     header.className = "dark-mode"
     searchicon.className = "dot dark-mode"
+    cvicon.className = "dot dark-mode"
     searchbar2.className = "searchbar dark-mode"
     document.getElementById("switchtext").innerHTML = "Dark Mode";
     console.log("toggle dark")
@@ -95,6 +98,7 @@ function darkMode() {
     header.className = "light-mode"
     footer.className = "light-mode"
     body.className = "light-mode";
+    cvicon.className = "dot light-mode"
     searchicon.className = "dot light-mode"
     searchbar2.className = "searchbar light-mode"
     document.getElementById("switchtext").innerHTML = "Light Mode";
@@ -109,6 +113,7 @@ function getstorage() {
   var body = document.getElementById("body");
   var searchbar2 = document.getElementById("searchbar2");
   var toggleswitch = document.getElementById("toggleswitch");
+  var cvicon = document.getElementById("cvicon");
   var searchicon = document.getElementById("searchicon");
   var darkmode = window.localStorage.getItem('dark-mode')
   var darkmodetxt = document.getElementsByClassName("darkmodetext")
@@ -131,6 +136,7 @@ function getstorage() {
     console.log('test dark')
     body.className = "dark-mode";
     searchicon.className = "dot dark-mode";
+    cvicon.className = "dot dark-mode"
     searchbar2.className = "searchbar dark-mode"
     contents.className = "dark-mode"
     header.className = "dark-mode"
@@ -146,6 +152,7 @@ function getstorage() {
     console.log('test light')
     body.className = "light-mode";
     searchicon.className = "dot light-mode";
+    cvicon.className = "dot light-mode"
     contents.className = "light-mode"
     header.className = "light-mode"
     footer.className = "light-mode"

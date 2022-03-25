@@ -86,7 +86,7 @@ h1{
 .carousel-indicators span{
     display: inline-block;
     background-color: white;
-    width: 30px;
+    width: 5vw;
     height: 4px;
     border-radius: 0px;
     opacity: .5;
@@ -98,8 +98,8 @@ h1{
     opacity: 1;
 }
 
-@media screen and (max-width: 629px) {
-  .carousel {
+@media screen and (max-width: 458px) {
+  .carousel-indicators span {
     
   }
 }
